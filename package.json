@@ -1,5 +1,5 @@
 {
-  "name": "email-obfuscator",
+  "name": "@fischerpascal/html-email-obfuscator",
   "version": "1.0.0",
   "description": "NodeJS module to obfuscate eMail addresses",
   "main": "index.js",
@@ -8,19 +8,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pfarrer/email-obfuscator.git"
+    "url": "git+https://github.com/fischerpascal/html-email-obfuscator"
   },
   "keywords": [
     "email",
     "obfuscate",
     "obfuscator"
   ],
-  "author": "Brian Pfretzschner",
+  "authors": [
+    {
+      "name": "Brian Pfretzschner"
+    },
+    {
+      "name": "Pascal Fischer"
+    }
+  ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Pfarrer/email-obfuscator/issues"
-  },
-  "homepage": "https://github.com/Pfarrer/email-obfuscator#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^2.4.5"

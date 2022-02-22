@@ -11,7 +11,7 @@ Installation
 ------------
 
 ```
-npm install --save email-obfuscator
+npm install --save html-email-obfuscator
 ```
 
 
