@@ -11,7 +11,7 @@ Installation
 ------------
 
 ```
-npm install --save html-email-obfuscator
+npm install --save @fischerpascal/html-email-obfuscator
 ```
 
 
@@ -21,7 +21,7 @@ Usage
 The Email address "mail@example.com" will result in the following string:
 
 ```js
-var emailObfuscator = require('email-obfuscator');
+var emailObfuscator = require('@fischerpascal/html-email-obfuscator');
 
 // Obfuscate and encode as HTML <script>
 var htmlScript = emailObfuscator.asHtmlScript('mail@example.com');
