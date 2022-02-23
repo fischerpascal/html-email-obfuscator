@@ -43,3 +43,13 @@ module.exports.unobfuscate = function (obfuscated) {
 		email = rot(res[0]);
 	return email.substr(0, atIndex) + '@' + email.substr(atIndex);
 };
+
+function replacer(match, p1){
+  return module.exports.asHtmlScript(p1);
+}
+
+module.exports.obfuscateEMailsInHtml = function (html) {
+  html = html.replace(/<a.*?>([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)<\/a>/g, '$1');
+  html = html.replace(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9._-]+)/gi, replacer);
+  return html;
+};

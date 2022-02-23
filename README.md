@@ -32,6 +32,12 @@ var obfuscated = emailObfuscator.obfuscate('mail@example.com');
 // obfuscated = 'znvyrknzcyr.pbz/4'
 var original = emailObfuscator.unobfuscate(obfuscated);
 // original = 'mail@example.com'
+
+// Find, obfuscate and encode emails in HTML-Strings
+// This function use emailObfuscator.asHtmlScript();
+var obfuscated_html_string = emailObfuscator.obfuscateEMailsInHtml("<p>My Mail is test@test.de</p>");
+// obfuscated_html_string = '<p>My Mail is <script>…</script></p>' // See below
+
 ```
 
 asHtmlScript output which can be included instead of the email address:
